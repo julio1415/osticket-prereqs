@@ -2,54 +2,64 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+# osTicket - Prerequisites and Installation
 
+This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.
 
-<h2>Video Demonstration</h2>
+## Video Demonstration
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+- [How To Install osTicket with Prerequisites](https://www.youtube.com)
 
-<h2>Environments and Technologies Used</h2>
+## Environments and Technologies Used
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Internet Information Services (IIS)
 
-<h2>Operating Systems Used </h2>
+## Operating Systems Used
 
-- Windows 10</b> (21H2)
+- Windows 10 (21H2)
 
-<h2>List of Prerequisites</h2>
+## List of Prerequisites
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- **Web Server (IIS)**: Ensure that IIS is installed and configured on your Windows VM.
+- **PHP**: PHP 7.4 or newer must be installed and configured to run with IIS.
+- **MySQL**: MySQL 5.7 or MariaDB 10.3 or newer must be available to store the osTicket data.
+- **PHP Extensions**: Required PHP extensions include gd, mbstring, mysqli, and intl.
+- **Mail Server**: An SMTP server must be configured for osTicket to send out email notifications.
 
-<h2>Installation Steps</h2>
+## Installation Steps
 
+### 1. Preparing the Environment
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Environment Preparation"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Set up your Microsoft Azure virtual machine and configure Windows 10 and IIS to host osTicket.
 </p>
-<br />
 
+### 2. Installing PHP and Required Extensions
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="PHP Installation"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Install PHP via the Web Platform Installer in IIS and ensure all required extensions are enabled.
 </p>
-<br />
 
+### 3. Configuring the Database
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Database Configuration"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Set up MySQL or MariaDB and create a database and user specifically for osTicket.
 </p>
-<br />
+
+### 4. Installing osTicket
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="osTicket Installation"/>
+</p>
+<p>
+Download and extract osTicket, then follow the web-based installation process to configure the helpdesk system.
+</p>
+
+This structured guide provides clear and concise instructions for setting up osTicket, complete with steps and images for each phase of the installation process.
